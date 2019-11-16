@@ -8,4 +8,4 @@ A dashboard for the facebook group Listen to this KGP.
 We intend to create an application that creates playlists of the most popular songs of the day, month, etc. These playlists will be created on YouTube, Spotify and other music platforms that users can access through a channel operated by the bot.
 
 ## Community
-Join us on Slack
+Join us on [Slack](https://join.slack.com/t/listentothiskgp/shared_invite/enQtODMwMjIwMjExNjIxLWI2NjgxYzhjZmM0ZWNlMzg4MjA5YzZkMjg0MTdjZjE4ZGQ4YjM1YzA0NWYxYTY1YjFmNDJhNGYzMzJmOGU4ZWI)
