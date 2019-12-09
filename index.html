@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Bangers|Caveat|Cookie|Gloria+Hallelujah|Mansalva|Permanent+Marker|Satisfy&display=swap" rel="stylesheet">
+        <title>Listen-To-This-KGP!</title>
+        <style type="text/css">
+            *
+            {
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            #wrapper
+            {
+                width: 100%;
+                height: auto;
+            }
+            #header
+            {
+                position: fixed;
+                width: 100%;
+                height: 3.3vw;
+                background-color: rgba(255,255,255,0.9);
+                display: flex;
+                flex: 1;
+                z-index: 2;
+            }
+            #logo
+            {
+                width: 100%;
+                margin-left: 15%;
+                height: 100%;
+                background-color: aqua;
+                flex: 1;
+            }
+            #menu
+            {
+            
+                width: 100%;
+                height: 100%;
+                flex:3;
+                margin-right: 15%;
+                background-color: transparent;
+            }
+            #menu > ul
+            {
+                list-style: none;
+                display: flex;
+                text-decoration: none;
+                width: 100%;
+                height: 100%;
+            }
+            #menu > ul > li > a
+            {
+                text-decoration: none;
+                font-size: 1.2vw;
+                font-family: 'Acme', sans-serif;
+                color: black;
+            }
+            #menu > ul > li
+            {
+                background-color: transparent;
+                width: 25%;
+                height: 100%;
+                text-align: center;
+                line-height: 3.3vw;
+                overflow: hidden;
+            }
+            #menu > ul > li:hover
+            {
+                border-bottom-style: inset;
+                border-bottom-width: 3px;
+                border-bottom-color: red;
+                backdrop-filter:blur(50px) brightness(150%);
+            }
+            #menu > ul > li:hover a
+            {
+                color: red;
+            }
+            
+            #container
+            {
+                background-image: url("./images/Listen.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width:100%;
+                height: 1500px;
+                z-index: 1;
+            }
+            .shape-Listen
+            {
+                position: absolute;
+                width: auto;
+                height: auto;
+                background-color: yellow;
+                transform: skewX(-20deg);
+                margin-left: 35%;
+                margin-top: 8%;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Permanent Marker', cursive;
+                text-align: center;
+                font-size: 4vw;
+                color: white;
+                -webkit-text-stroke-width: 3px;
+                -webkit-text-stroke-color: black;
+                overflow: hidden;
+            }
+            .shape-To
+            {
+                position: absolute;
+                width: auto;
+                height: auto;
+                background-color: #ffbf00;
+                transform: skewX(-20deg);
+                margin-left: 48%;
+                margin-top: 9%;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Permanent Marker', cursive;
+                text-align: center;
+                font-size: 4vw;
+                color: white;
+                -webkit-text-stroke-width: 3px;
+                -webkit-text-stroke-color: black;
+                overflow: hidden;
+            }
+            .shape-This
+            {
+                position: absolute;
+                width: auto;
+                height: auto;
+                background-color: greenyellow;
+                transform: skewX(-20deg);
+                margin-left: 55%;
+                margin-top: 7%;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Permanent Marker', cursive;
+                text-align: center;
+                font-size: 4vw;
+                color: white;
+                -webkit-text-stroke-width: 3px;
+                -webkit-text-stroke-color: black;
+                overflow: hidden;
+            }
+            .shape-KGP
+            {
+                position: absolute;
+                width: auto;
+                height: auto;
+                background-color: red;
+                transform: skewX(20deg);
+                margin-left: 45%;
+                margin-top: 15%;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Permanent Marker', cursive;
+                text-align: center;
+                font-size: 6vw;
+                color: white;
+                -webkit-text-stroke-width: 3px;
+                -webkit-text-stroke-color: black;
+                transition-duration: 0.8s;
+                transition-property: transform;
+            }
+            .shape-KGP:hover
+            {
+                transform: scale(1.2) skewX(20deg);
+                transition-duration: 0.8s;
+                transition-property: transform;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <!-- Header section starts here-->
+            <div id="header">
+                <div id="logo" title="Logo here">
+                    logo
+                </div>
+                
+                <div id="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list-elements"><a href="#">Home</a></li>
+                        <li class="menu-list-elements"><a href="#">Lists</a></li>
+                        <li class="menu-list-elements"><a href="#">About Us</a></li>
+                        <li class="menu-list-elements"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Header section ends here -->
+            
+            <!-- Main Content starts here -->
+            <div id="container">
+                <div class="shape-Listen" class="shapes">
+                    Listen
+                </div>
+                <div class="shape-To" class="shapes">
+                    To
+                </div>
+                <div class="shape-This" class="shapes">
+                    This
+                </div>
+                <div class="shape-KGP" class="shapes">
+                    KGP
+                </div>
+            </div>
+            <!-- Main Content ends here -->
+        </div>
+    </body>
+</html>
