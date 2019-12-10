@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Bangers|Caveat|Cookie|Gloria+Hallelujah|Mansalva|Permanent+Marker|Satisfy&display=swap" rel="stylesheet">
+        <title>Listen-To-This-KGP!</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+                $("#Home").css("border-bottom-style","solid");
+                $("#Home").css("border-bottom-color","white");
+                $("#Home").css("border-bottom-width","3px");
+                $("#Home > a").css("color","white");
+            $("#video").hover(function(){
+            $("#video-rectangle1").css("transform", "scale(1.1) skewY(-10deg)");
+            $("#video-rectangle1").css("margin-left", "40%");
+            $("#video-rectangle1").css("margin-top", "-2%");
+            $("#video-rectangle1").css("transition-duration", "0.8s");
+            $("#video-rectangle1").css("transition-property", "all");
+                
+            $("#video-rectangle2").css("transform", "scale(1.1) skewY(10deg)");
+            $("#video-rectangle2").css("margin-left", "10%");
+            $("#video-rectangle2").css("margin-top", "4%");
+            $("#video-rectangle2").css("transition-duration", "0.8s");
+            $("#video-rectangle2").css("transition-property", "all");
+                
+            $(this).css("width","60%");
+            $(this).css("margin-left","20%");
+            $(this).css("transition-duration", "0.8s");
+            $(this).css("transition-property", "all");
+            }, function(){
+            $("#video-rectangle1").css("transform", "scale(1) skewY(-10deg)");
+            $("#video-rectangle1").css("margin-left", "28%");
+            $("#video-rectangle1").css("margin-top", "2%");
+            $("#video-rectangle1").css("transition-duration", "0.8s");
+            $("#video-rectangle1").css("transition-property", "all");
+                
+            $("#video-rectangle2").css("transform", "scale(1.1) skewY(10deg)");
+            $("#video-rectangle2").css("margin-left", "22%");
+            $("#video-rectangle2").css("margin-top", "2%");
+            $("#video-rectangle2").css("transition-duration", "0.8s");
+            $("#video-rectangle2").css("transition-property", "all");
+            
+            $(this).css("width","40%");
+            $(this).css("margin-left","30%");
+            $(this).css("transition-duration", "0.8s");
+            $(this).css("transition-property", "all");
+            });
+            
+            
+            $(".shape-KGP").hover(function(){
+                            $(this).css("cursor","pointer");
+                            $(this).css("transform","scale(1.2) skewX(20deg)");
+                            $(this).css("transition-duration","0.8s");
+                            $(this).css("transition-property","all");
+                            $(this).css("margin-left","31%");
+                
+                            $(".shape-Listen").css("transform","scale(1.2) skewX(-20deg)");
+                            $(".shape-Listen").css("transition-duration","0.8s");
+                            $(".shape-Listen").css("transition-property","all");
+                            $(".shape-Listen").css("margin-left","21%");
+                
+                            $(".shape-To").css("transform","scale(1.2) skewX(-20deg)");
+                            $(".shape-To").css("transition-duration","0.8s");
+                            $(".shape-To").css("transition-property","all");
+                            $(".shape-To").css("margin-left","36%");
+                
+                            $(".shape-This").css("transform","scale(1.2) skewX(-20deg)");
+                            $(".shape-This").css("transition-duration","0.8s");
+                            $(".shape-This").css("transition-property","all");
+                            $(".shape-This").css("margin-left","43%");
+                
+                            $("#Listen-img").css("transform","scale(1.1) skewX(-10deg)");
+                            $("#Listen-img").css("transition-duration","0.8s");
+                            $("#Listen-img").css("transition-property","all");
+                            $("#Listen-img").css("margin-left","53%");
+                
+                            $("#img-rectangle1").css("transform","scale(1.1) skewX(10deg)");
+                            $("#img-rectangle1").css("transition-duration","0.8s");
+                            $("#img-rectangle1").css("transition-property","all");
+                            $("#img-rectangle1").css("margin-top","0%");
+                
+                            $("#img-rectangle2").css("transform","scale(1.1) skewX(-10deg)");
+                            $("#img-rectangle2").css("transition-duration","0.8s");
+                            $("#img-rectangle2").css("transition-property","all");
+                            $("#img-rectangle2").css("margin-top","8%");
+                        },
+                        function(){
+                            $(this).css("transform","scale(1.2) skewX(20deg)");
+                            $(this).css("transition-duration","0.8s");
+                            $(this).css("transition-property","all");
+                            $(this).css("margin-left","35%");
+                
+                            $(".shape-Listen").css("transform","scale(1) skewX(-20deg)");
+                            $(".shape-Listen").css("transition-duration","0.8s");
+                            $(".shape-Listen").css("transition-property","all");
+                            $(".shape-Listen").css("margin-left","25%");
+                
+                            $(".shape-To").css("transform","scale(1) skewX(-20deg)");
+                            $(".shape-To").css("transition-duration","0.8s");
+                            $(".shape-To").css("transition-property","all");
+                            $(".shape-To").css("margin-left","38%");
+                
+                            $(".shape-This").css("transform","scale(1) skewX(-20deg)");
+                            $(".shape-This").css("transition-duration","0.8s");
+                            $(".shape-This").css("transition-property","all");
+                            $(".shape-This").css("margin-left","45%");
+                
+                            $("#Listen-img").css("transform","scale(1) skewX(-10deg)");
+                            $("#Listen-img").css("transition-duration","0.8s");
+                            $("#Listen-img").css("transition-property","all");
+                            $("#Listen-img").css("margin-left","48%");
+                
+                            $("#img-rectangle1").css("transform","scale(1) skewX(10deg)");
+                            $("#img-rectangle1").css("transition-duration","0.8s");
+                            $("#img-rectangle1").css("transition-property","all");
+                            $("#img-rectangle1").css("margin-top","4%");
+                
+                            $("#img-rectangle2").css("transform","scale(1) skewX(-10deg)");
+                            $("#img-rectangle2").css("transition-duration","0.8s");
+                            $("#img-rectangle2").css("transition-property","all");
+                            $("#img-rectangle2").css("margin-top","6%");
+                        }
+                     );
+                
+                $(".shape-Listen").hover(function(){
+                            $(".shape-Listen").css("transform","scale(1.2) skewX(-20deg)");
+                            $(".shape-Listen").css("transition-duration","0.8s");
+                            $(".shape-Listen").css("transition-property","all");
+                            $(".shape-Listen").css("margin-left","21%");
+                },
+                                      function(){
+                            $(".shape-Listen").css("transform","scale(1) skewX(-20deg)");
+                            $(".shape-Listen").css("transition-duration","0.8s");
+                            $(".shape-Listen").css("transition-property","all");
+                            $(".shape-Listen").css("margin-left","25%");
+                    
+                });
+                
+                $(".shape-To").hover(function(){
+                            $(".shape-To").css("transform","scale(1.2) skewX(-20deg)");
+                            $(".shape-To").css("transition-duration","0.8s");
+                            $(".shape-To").css("transition-property","all");
+                            $(".shape-To").css("margin-left","36%");
+                },
+                                      function(){
+                            $(".shape-To").css("transform","scale(1) skewX(-20deg)");
+                            $(".shape-To").css("transition-duration","0.8s");
+                            $(".shape-To").css("transition-property","all");
+                            $(".shape-To").css("margin-left","38%");
+                    
+                });
+                
+                $(".shape-This").hover(function(){
+                            $(".shape-This").css("transform","scale(1.2) skewX(-20deg)");
+                            $(".shape-This").css("transition-duration","0.8s");
+                            $(".shape-This").css("transition-property","all");
+                            $(".shape-This").css("margin-left","43%");
+                },
+                                      function(){
+                            $(".shape-This").css("transform","scale(1) skewX(-20deg)");
+                            $(".shape-This").css("transition-duration","0.8s");
+                            $(".shape-This").css("transition-property","all");
+                            $(".shape-This").css("margin-left","45%");
+                    
+                });
+                
+                $("#Listen-img").hover(function(){
+                            $("#Listen-img").css("transform","scale(1.1) skewX(-10deg)");
+                            $("#Listen-img").css("transition-duration","0.8s");
+                            $("#Listen-img").css("transition-property","all");
+                            $("#Listen-img").css("margin-left","53%");
+                },
+                                      function(){
+                            $("#Listen-img").css("transform","scale(1) skewX(-10deg)");
+                            $("#Listen-img").css("transition-duration","0.8s");
+                            $("#Listen-img").css("transition-property","all");
+                            $("#Listen-img").css("margin-left","48%");
+                    
+                });
+                
+                $("#img-rectangle1").hover(function(){
+                            $("#img-rectangle1").css("transform","scale(1.1) skewX(10deg)");
+                            $("#img-rectangle1").css("transition-duration","0.8s");
+                            $("#img-rectangle1").css("transition-property","all");
+                },
+                                      function(){
+                            $("#img-rectangle1").css("transform","scale(1) skewX(10deg)");
+                            $("#img-rectangle1").css("transition-duration","0.8s");
+                            $("#img-rectangle1").css("transition-property","all");
+                    
+                });
+                
+                $("#img-rectangle2").hover(function(){
+                            $("#img-rectangle2").css("transform","scale(1.1) skewX(-10deg)");
+                            $("#img-rectangle2").css("transition-duration","0.8s");
+                            $("#img-rectangle2").css("transition-property","all");
+                },
+                                      function(){
+                            $("#img-rectangle2").css("transform","scale(1) skewX(-10deg)");
+                            $("#img-rectangle2").css("transition-duration","0.8s");
+                            $("#img-rectangle2").css("transition-property","all");
+                    
+                });
+            
+            });
+</script>
+        
+        <style type="text/css">
+            *
+            {
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            #wrapper
+            {
+                width: 100%;
+                height: auto;
+                background-image: url("./images/150731.jpg");
+                background-size: cover; 
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+            #header
+            {
+                display: block;
+                position: fixed;
+                width: 100%;
+                height: 3.3vw;
+                background-color: rgba(0,0,0,0.5);
+                backdrop-filter:blur(10px);
+                display: flex;
+                flex: 1;
+                z-index: 100;
+            }
+            #logo
+            {
+                width: 100%;
+                margin-left: 15%;
+                height: 100%;
+                flex: 1;
+            }
+            #menu
+            {
+            
+                width: 100%;
+                height: 100%;
+                flex:3;
+                margin-right: 15%;
+                background-color: transparent;
+            }
+            #menu > ul
+            {
+                list-style: none;
+                display: flex;
+                text-decoration: none;
+                width: 100%;
+                height: 100%;
+            }
+            #menu > ul > li > a
+            {
+                text-decoration: none;
+                font-size: 1.2vw;
+                font-family: 'Acme', sans-serif;
+                color: white;
+            }
+            #menu > ul > li
+            {
+                background-color: transparent;
+                width: 25%;
+                height: 100%;
+                text-align: center;
+                line-height: 3.3vw;
+                overflow: hidden;
+            }
+            #menu > ul > li:hover
+            {
+                border-bottom-style: inset;
+                border-bottom-width: 3px;
+                border-bottom-color: white;
+            }
+            
+            #container
+            {
+                width:100%;
+                height: 120vw;
+                z-index: 1;
+            }
+            #img-rectangle1
+            {
+                position: absolute;
+                margin-left: 15%;
+                width:70%;
+                height: 37vw;
+                transform: skewX(10deg);
+                border-width: 1vw;
+                border-style: solid;
+                border-color: rgba(255,25,76,0.9);
+                margin-top: 4%;
+                background-color: rgba(255,25,76,0.5);
+                z-index: 0;
+                transition-duration: 0.8s;
+                transition-property: all;
+            }
+            #img-rectangle2
+            {
+                position: absolute;
+                margin-left: 15%;
+                width:70%;
+                height: 37vw;
+                transform: skewX(-10deg);
+                border-width: 1vw;
+                border-style: solid;
+                border-color: rgba(0,242,255,0.9);
+                margin-top: 6%;
+                background-color: rgba(0,242,255,0.5);
+                transition-duration: 0.8s;
+                transition-property: all;
+
+            }
+            #Listen-img
+            {
+                position: absolute;
+                margin-left: 48%;
+                margin-top: 6%;
+                width: 38%;
+                transform: skewX(-10deg);
+                height: 35vw;
+                background-image: url("./images/Listen.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                box-shadow: 5px 5px 10px black;
+                border-width: 1vw;
+                border-style: solid;
+                border-color: yellow;
+                transition-duration: 0.8s;
+                transition-property: all;
+            }
+            .shape-Listen
+            {
+                position: absolute;
+                width: auto;
+                height: auto;
+                background-color: yellow;
+                transform: skewX(-20deg);
+                margin-left: 25%;
+                margin-top: 14%;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Permanent Marker', cursive;
+                text-align: center;
+                font-size: 4vw;
+                color: white;
+                -webkit-text-stroke-width: 3px;
+                -webkit-text-stroke-color: black;
+                overflow: hidden;
+                box-shadow: 5px 5px 10px black;
+                transition-duration: 0.8s;
+                transition-property: all;
+            }
+            .shape-To
+            {
+                position: absolute;
+                width: auto;
+                height: auto;
+                background-color: #ffbf00;
+                transform: skewX(-20deg);
+                margin-left: 38%;
+                margin-top: 15%;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Permanent Marker', cursive;
+                text-align: center;
+                font-size: 4vw;
+                color: white;
+                -webkit-text-stroke-width: 3px;
+                -webkit-text-stroke-color: black;
+                overflow: hidden;
+                box-shadow: 5px 5px 10px black;
+                transition-duration: 0.8s;
+                transition-property: all;
+            }
+            .shape-This
+            {
+                position: absolute;
+                width: auto;
+                height: auto;
+                background-color: greenyellow;
+                transform: skewX(-20deg);
+                margin-left: 45%;
+                margin-top: 13%;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Permanent Marker', cursive;
+                text-align: center;
+                font-size: 4vw;
+                color: white;
+                -webkit-text-stroke-width: 3px;
+                -webkit-text-stroke-color: black;
+                overflow: hidden;
+                box-shadow: 5px 5px 10px black;
+                transition-duration: 0.8s;
+                transition-property: all;
+            }
+            .shape-KGP
+            {
+                position: absolute;
+                width: auto;
+                height: auto;
+                background-color: red;
+                transform: skewX(20deg);
+                margin-left: 35%;
+                margin-top: 21%;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Permanent Marker', cursive;
+                text-align: center;
+                font-size: 6vw;
+                color: white;
+                -webkit-text-stroke-width: 3px;
+                -webkit-text-stroke-color: black;
+                transition-duration: 0.8s;
+                transition-property: all;
+                box-shadow: 5px 5px 10px black;
+            }
+            
+            #top_video
+            {
+                position: absolute;
+                width: 70%;
+                height: 40vw;
+                background-color: rgba(0,0,0,0.6);
+                backdrop-filter:blur(5px);
+                border-radius: 20px;    
+                margin-top: 60vw;
+                margin-left: 15%;
+            }
+            
+            #video-rectangle1
+            {
+                position: absolute;
+                width: 50%;
+                height: 22vw;
+                background-color: aqua;
+                margin-left: 28%;
+                margin-top: 2%;
+                transform: skewY(-10deg);
+                z-index: 2;
+                
+            }
+            #video-rectangle2
+            {
+                position: absolute;
+                width: 50%;
+                height: 22vw;
+                background-color: yellow;
+                margin-left: 22%;
+                margin-top: 2%;
+                transform: skewY(10deg);
+                z-index: 1
+                
+            }
+            #video
+            {
+                position: absolute;
+                width: 40%;
+                height: 20vw;
+                margin-top: 4%;
+                margin-left: 30%;
+                z-index: 3
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <!-- Header section starts here-->
+            <div id="header">
+                <div id="logo" title="Logo here">
+                    logo
+                </div>
+                
+                <div id="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list-elements" id="Home"><a href="#">Home</a></li>
+                        <li class="menu-list-elements"><a href="#">Lists</a></li>
+                        <li class="menu-list-elements"><a href="#">About Us</a></li>
+                        <li class="menu-list-elements"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Header section ends here -->
+            
+            <!-- Main Content starts here -->
+            <div id="container">
+                <div id="img-rectangle1">
+                </div>
+                <div id="img-rectangle2">
+                </div>
+                <div id="Listen-img">
+                </div>
+                <div class="shape-Listen" class="shapes">
+                    Listen
+                </div>
+                <div class="shape-To" class="shapes">
+                    To
+                </div>
+                <div class="shape-This" class="shapes">
+                    This
+                </div>
+                <div class="shape-KGP" class="shapes">
+                    KGP
+                </div>
+                
+                <div id="top_video">
+                    <div id="video-rectangle1">
+                    </div>
+                    <div id="video-rectangle2">
+                    </div>
+                    <iframe id="video" src="https://www.youtube.com/embed/K4DyBUG242c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Main Content ends here -->
+        </div>
+    </body>
+</html>
